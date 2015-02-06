@@ -47,7 +47,7 @@ class Parse
     elsif operation[0] == "exit"
       result = Exit.new
     else
-    #   #bad command
+      result = BadCommand.new
      end
 
     return result
