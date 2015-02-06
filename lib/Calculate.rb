@@ -14,3 +14,5 @@ require 'calculate/negate_command'
 require 'calculate/repeat_command'
 require 'calculate/cancel_command'
 require 'calculate/history'
+require 'calculate/exit'
+

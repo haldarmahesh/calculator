@@ -44,7 +44,11 @@ class Parse
       result = CancelCommand.new
     elsif operation[0] == "repeat"
       result = RepeatCommand.new(operation[1])
-    end
+    elsif operation[0] == "exit"
+      result = Exit.new
+    else
+    #   #bad command
+     end
 
     return result
   end

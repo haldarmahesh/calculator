@@ -10,7 +10,7 @@ class Application
     parser = Parse.new
     print "$ "
     input = gets.chomp
-    while input != 'exit' do 
+    while true do 
         command = parser.parsing(input)
         puts command.execute(@calci, @history)
         print "$ "
