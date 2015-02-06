@@ -5,7 +5,7 @@ describe 'CancelCommand' do
   let(:calc) {Calculator.new(21)}
   
   it 'performs cancel' do
-    expect(command.execute(calc)).to eq(0)
+    expect(command.execute(calc, History.new)).to eq(0)
   end
 
 end

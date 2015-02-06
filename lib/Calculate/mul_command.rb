@@ -6,7 +6,7 @@ class MulCommand
 
   def execute(calc, hist)
     hist.push_history(self)
-    calc.multiply(@operand)
+    execute_without_push(calc)
   end
 
   def execute_without_push(calc)

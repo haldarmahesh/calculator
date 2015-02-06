@@ -6,7 +6,7 @@ class SubCommand
 
   def execute(calc, hist)
     hist.push_history(self) 
-    calc.subtract(@operand)
+    execute_without_push(calc)
   end
   def execute_without_push(calc)
     calc.subtract(@operand)

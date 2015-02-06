@@ -6,7 +6,7 @@ attr_reader :operand
 
   def execute(calc, hist)
     hist.push_history(self)
-    calc.add(@operand)
+    execute_without_push(calc)
   end
   def execute_without_push(calc)
     calc.add(@operand)

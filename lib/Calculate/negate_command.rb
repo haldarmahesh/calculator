@@ -2,7 +2,7 @@ class NegateCommand
 
   def execute(calc, hist)
     hist.push_history(self)
-    calc.negate       
+    execute_without_push(calc)
   end
   def execute_without_push(calc)
     calc.negate
